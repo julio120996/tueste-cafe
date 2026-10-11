@@ -12,7 +12,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 body {
@@ -29,73 +29,82 @@ a {
 /* ---------- HEADER ---------- */
 
 .header {
-    width: 1280px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 24px 48px;
+    gap: 0.75rem;
+    padding: 1rem;
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 0.1875rem;
     color: #9a3412;
 }
 
 .menu {
     display: flex;
-    gap: 36px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
 }
 
 .menu a {
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 /* ---------- HERO ---------- */
 
 .hero {
-    width: 1280px;
-    height: 620px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 48px;
-    padding: 0 48px;
+    gap: 1.5rem;
+    padding: 0 1rem;
 }
 
 .hero-img {
-    width: 520px;
-    height: 520px;
-    border-radius: 24px;
+    display: block;
+    width: 100%;
+    max-width: 22rem;
+    height: auto;
+    border-radius: 1.5rem;
 }
 
 .hero-texto {
-    width: 640px;
+    width: 100%;
+    max-width: 100%;
 }
 
 h1 {
-    font-size: 72px;
-    line-height: 80px;
+   font-size: 2.5rem;
+    line-height: 1.1;
     color: #9a3412;
 }
 
 .hero-texto p {
-    font-size: 22px;
-    line-height: 34px;
-    margin-top: 20px;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-top: 1rem;
     color: #6b4f3a;
 }
 
 .boton {
     display: inline-block;
-    margin-top: 32px;
-    padding: 18px 44px;
+    margin-top: 2rem;
+    padding: 1.125rem 2.75rem;
     background-color: #9a3412;
     color: #fdf6ec;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     border-radius: 999px;
 }
@@ -103,129 +112,255 @@ h1 {
 /* ---------- CARTA ---------- */
 
 .carta {
-    width: 1280px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
-    padding: 80px 48px;
+    padding: 5rem 1rem;
 }
 
 .carta h2 {
-    font-size: 48px;
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 2rem;
     color: #9a3412;
 }
 
 .productos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .producto {
-    width: 280px;
-    padding: 28px;
+    width: 100%; 
+    max-width: 17.5rem;
+    height: auto;
+    padding: 1.75rem;
     background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(59, 42, 26, 0.08);
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(59, 42, 26, 0.08);
 }
 
 .producto h3 {
-    font-size: 24px;
-    margin-bottom: 8px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .producto p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #6b4f3a;
 }
 
 .producto .precio {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: bold;
-    margin-top: 16px;
+    margin-top: 1rem;
     color: #9a3412;
 }
 
 /* ---------- HORARIO Y UBICACIÓN ---------- */
 
 .info {
-    width: 1280px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    gap: 48px;
-    padding: 0 48px 80px;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 1rem 5rem;
 }
 
 .info-box {
-    width: 568px;
-    height: 300px;
-    padding: 40px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 1.5rem;
     background-color: #3b2a1a;
     color: #fdf6ec;
-    border-radius: 16px;
+    border-radius: 1rem;
 }
 
 .info-box h2 {
-    font-size: 36px;
-    margin-bottom: 16px;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
     color: #fdba74;
 }
 
 .info-box p {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
 }
 
 /* ---------- OPINIÓN ---------- */
 
 .opinion {
-    width: 1280px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
-    padding: 80px 160px;
+    padding: 5rem 1.5rem;
     text-align: center;
     background-color: #fff7ed;
 }
 
 .opinion blockquote {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 1.75rem;
+    line-height: 1.3;
     font-style: italic;
     color: #9a3412;
 }
 
 .opinion cite {
     display: block;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
-    margin-top: 24px;
+    margin-top: 1.5rem;
     color: #6b4f3a;
 }
 
 /* ---------- FOOTER ---------- */
 
 .footer {
-    width: 1280px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 48px;
+    padding: 2.5rem 1rem;
     border-top: 1px solid #e7d5c0;
 }
 
 .footer-brand {
-    font-size: 16px;
+    font-size: 1rem;
     color: #6b4f3a;
 }
 
 .footer-links {
     display: flex;
-    gap: 32px;
+    gap: 1rem;
 }
 
 .footer-links a {
-    font-size: 16px;
+    font-size: 1.125rem;
 }
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media (min-width: 768px) {
+    .header {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.5rem 3rem;
+    }
+
+    .menu {
+        justify-content: flex-end;
+        gap: 1rem 2.25rem;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        max-width: 80rem;
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+        padding: 3rem;
+    }
+
+    .hero-img {
+        flex: 0 1 32.5rem;
+        width: 44%;
+        max-width: 32.5rem;
+        height: auto;
+    }
+
+    .hero-texto {
+        flex: 1 1 0;
+        width: auto;
+        min-width: 0;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+
+    .hero-texto p {
+        font-size: 1.375rem;
+        line-height: 2.125rem;
+        margin-top: 1.25rem;
+    }
+
+    .carta {
+        max-width: 80rem;
+        padding: 5rem 3rem;
+    }
+
+    .carta h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .productos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .producto {
+        flex: 1 1 calc(50% - 2rem);
+        max-width: 17.5rem;
+        min-width: 0;
+    }
+
+    .info {
+        max-width: 80rem;
+        flex-direction: row;
+        gap: 3rem;
+        padding: 0 3rem 5rem;
+    }
+
+    .info-box {
+        flex: 1 1 0;
+        width: auto;
+        min-width: 0;
+    }
+
+    .info-box h2 {
+        font-size: 2.25rem;
+    }
+
+    .opinion {
+        padding: 5rem 10rem;
+    }
+
+    .opinion blockquote {
+        font-size: 2.5rem;
+        line-height: 3.25rem;
+    }
+
+    .footer {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.5rem 3rem;
+    }
+
+    .footer-links {
+        gap: 2rem;
+    }
+
+    .boton:hover {
+        background-color: #7c2d12;
+    }
+}
+
